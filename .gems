@@ -1,1 +1,1 @@
-rails -v YOUR_RAILS_VERSION
+rails -v 2.3.8
