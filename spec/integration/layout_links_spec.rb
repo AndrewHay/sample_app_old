@@ -1,5 +1,4 @@
 require 'spec_helper'
-require "webrat"
 
 describe "Layout links" do
   it "should have a Home page at '/'" do
@@ -27,9 +26,6 @@ describe "Layout links" do
     response.should render_template('users/new')
   end
   
-  Webrat.configure do |config|
-    config.mode = :rails
-  end
   
   it "should have the right links on the layout" do
     visit root_path
